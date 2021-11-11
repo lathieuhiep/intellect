@@ -382,6 +382,102 @@ div.clear {
     display: inline-block;
 }
 
+#register a.btn-register-now {
+    background-color: #FF4F41;
+}
+
+.modal-register-now .modal-body {
+    padding: 34px 57px 30px 57px;
+}
+
+.modal-register-now .modal-body .modal-title {
+    font-weight: 700;
+    font-size: 16px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.modal-register-now .modal-body .sub-title {
+    font-size: 15px;
+    color: #313131;
+    margin-bottom: 30px;
+}
+
+.from-register-now form p {
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.from-register-now form label {
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.from-register-now form .wpcf7-form-control-wrap {
+    display: block;
+    margin-top: 10px;
+}
+
+.from-register-now form .wpcf7-form-control-wrap .wpcf7-form-control {
+    width: 100%;
+    height: auto;
+    padding: 12px 16px;
+    font-size: 15px;
+    color: #979797;
+    font-weight: 400;
+    border: 1px solid #B8B8B8;
+    border-radius: 3px;
+}
+
+.from-register-now form .wpcf7-form-control.wpcf7-submit {
+    padding: 12px 16px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+    background-color: #FF4F41;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.from-register-now form .wpcf7-form-control.wpcf7-submit:hover {
+    background-color: #ff6167;
+}
+
+.from-register-now form .wpcf7-spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50px) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.modal-register-now .modal-body .note {
+    font-size: 15px;
+    color: #000000;
+}
+
+.modal-register-now .modal-body .note p {
+    margin-bottom: 0;
+}
+
+.modal-register-now .modal-body .note a {
+    color: #FF4F41;
+    font-size: 16px;
+    font-weight: 700;
+}
+
 #footer {
     background: #262525;
     padding: 20px 0;

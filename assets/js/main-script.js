@@ -6,10 +6,6 @@ jQuery(document).ready(function ($) {
 	$('a[title=contact-modal]').click(function () {
         $('#modalContact').modal('show');
     });
-    
-    $('#register').click(function () {
-        $('#modalRegister').modal('show');
-    });
 
     $('.lazy').lazy({
         effect: "fadeIn",
