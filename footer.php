@@ -4,12 +4,6 @@
         <a href="#" id="register" class="register-btn" data-toggle="modal" data-target="#modalRegister">
             Đăng ký
         </a>
-
-        <!-- Button trigger modal -->
-        <a href="#" class="register-btn btn-register-now" data-toggle="modal" data-target="#modalRegisterNow">
-            Đăng ký học ngay
-            <i class="fa fa-long-arrow-right"></i>
-        </a>
     </div>
 </div>
 
@@ -246,6 +240,23 @@
     </div>
 </div>
 <a id="button"></a>
+
+<!-- Button trigger modal -->
+<a href="#" class="btn-register-now" data-toggle="modal" data-target="#modalRegisterNow">
+    Đăng ký học ngay
+    <i class="fa fa-long-arrow-right"></i>
+</a>
+
+<div class="contact-chat-box">
+    <a href="https://zalo.me/0911321300" target="_blank">
+        <img src="<?php echo get_theme_file_uri('assets/images/zalo.png'); ?>" alt="zalo">
+    </a>
+
+    <a href="https://m.me/khoahocuxui" target="_blank">
+        <img src="<?php echo get_theme_file_uri('assets/images/messenger-facebook.png'); ?>" alt="messenger-facebook">
+    </a>
+    </a>
+</div>
 
 <?php wp_footer() ?>
 </body>

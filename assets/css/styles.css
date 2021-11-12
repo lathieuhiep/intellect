@@ -382,8 +382,28 @@ div.clear {
     display: inline-block;
 }
 
-#register a.btn-register-now {
+.btn-register-now {
+    position: fixed;
+    left: 16px;
+    bottom: 30px;
+    padding: 10px 30px;
+    color: #fff;
+    display: inline-block;
+    border-radius: 3px;
     background-color: #FF4F41;
+    z-index: 10;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.btn-register-now:hover,
+.btn-register-now:focus {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #555555;
 }
 
 .modal-register-now .modal-body {
@@ -1172,4 +1192,15 @@ p.teacher-description {
 }
 #banner .container-fluid{
     padding: 0 !important;
+}
+
+.contact-chat-box {
+    position: fixed;
+    right: 20px;
+    bottom: 100px;
+    z-index: 10;
+}
+
+.contact-chat-box a {
+    display: block;
 }
