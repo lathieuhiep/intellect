@@ -1,5 +1,30 @@
 <?php
 /**
+ * Required: include plugin theme scripts
+ */
+
+if ( class_exists( 'ReduxFramework' ) ) {
+    /*
+     * Required: Redux Framework
+     */
+    require get_parent_theme_file_path( '/extension/option-reudx/theme-options.php' );
+}
+
+// favicon
+add_action('wp_head', 'intellect_favicon', 1);
+
+function intellect_favicon() {
+    global $intellect_options;
+    $favicon = $intellect_options['intellect_opt_favicon_upload']['url'];
+
+    if ( empty( $favicon ) ) :
+        $favicon = get_theme_file_uri('/assets/images/favicon.png' );
+    endif;
+
+    echo '<link rel="shortcut icon" href="' . esc_url( $favicon ) . '" type="image/x-icon" sizes="16x16" />';
+}
+
+/**
  *
  */
 flush_rewrite_rules( false );

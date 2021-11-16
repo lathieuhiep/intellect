@@ -1,3 +1,8 @@
+<?php
+global $intellect_options;
+
+$showBackToTop = $intellect_options['intellect_opt_backtotop_show'] ?? true;
+?>
 <div id="register">
     <div class="container text-center">
         <span>Đừng bao giờ bỏ lỡ những tin tức mới về thiết kế từ chúng tôi. Hãy đăng ký mail tại đây</span>
@@ -239,7 +244,6 @@
         </div>
     </div>
 </div>
-<a id="button"></a>
 
 <!-- Button trigger modal -->
 <a href="#" class="btn-register-now" data-toggle="modal" data-target="#modalRegisterNow">
@@ -257,6 +261,12 @@
     </a>
     </a>
 </div>
+
+<?php if ( $showBackToTop ) : ?>
+
+    <a id="button"></a>
+
+<?php endif; ?>
 
 <?php wp_footer() ?>
 </body>
