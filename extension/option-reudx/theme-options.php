@@ -217,13 +217,6 @@ Redux::set_section($intellect_opt_name, array(
         ),
 
         array(
-            'id' => 'intellect_opt_header_text_follow',
-            'type' => 'text',
-            'title' => esc_html__('Text follow', 'intellect'),
-            'default' => 'Theo dõi tôi trên',
-        ),
-
-        array(
             'id' => 'intellect_opt_header_follow',
             'type' => 'text',
             'title' => esc_html__('Link follow', 'intellect'),
@@ -426,65 +419,6 @@ Redux::set_section($intellect_opt_name, array(
     )
 ));
 /* End Social Network */
-
-/* Start Shop */
-Redux::set_section($intellect_opt_name, array(
-    'id' => 'intellect_opt_shop',
-    'title' => esc_html__('Shop', 'intellect'),
-    'desc' => esc_html__('Settings WooCommerce', 'intellect'),
-    'customizer_width' => '400px',
-    'icon' => 'el el-shopping-cart',
-    'fields' => array(
-
-        array(
-            'id' => 'intellect_opt_shop_limit',
-            'type' => 'slider',
-            'title' => esc_html__('Product Limit Page Shop', 'intellect'),
-            'min' => 1,
-            'step' => 1,
-            'max' => 250,
-            'default' => 12,
-            'display_value' => 'text'
-        ),
-
-        array(
-            'id' => 'intellect_opt_shop_per_row',
-            'type' => 'select',
-            'title' => esc_html__('Products Per Row', 'intellect'),
-            'default' => 4,
-            'options' => array(
-                3 => '3 Column',
-                4 => '4 Column',
-                5 => '5 Column',
-            )
-        ),
-
-        array(
-            'id' => 'intellect_opt_shop_sidebar',
-            'type' => 'image_select',
-            'title' => esc_html__('Sidebar Shop', 'intellect'),
-            'default' => 'left',
-            'options' => array(
-                'hide' => array(
-                    'alt' => 'None Sidebar',
-                    'img' => ReduxFramework::$_url . 'assets/img/1col.png'
-                ),
-
-                'left' => array(
-                    'alt' => 'Sidebar Left',
-                    'img' => ReduxFramework::$_url . 'assets/img/2cl.png'
-                ),
-
-                'right' => array(
-                    'alt' => 'Sidebar Right',
-                    'img' => ReduxFramework::$_url . 'assets/img/2cr.png'
-                ),
-
-            ),
-        ),
-    )
-));
-/* End Shop */
 
 /* Start Typography Options */
 Redux::set_section($intellect_opt_name, array(
@@ -791,7 +725,7 @@ Redux::set_section($intellect_opt_name, array(
             'type' => 'editor',
             'title' => esc_html__('Enter content copyright', 'intellect'),
             'full_width' => true,
-            'default' => 'Copyright &amp; DiepLK',
+            'default' => '&copy; Copyright 2018 Sarah Nguyen. All rights reserved',
             'args' => array(
                 'wpautop' => false,
                 'media_buttons' => false,

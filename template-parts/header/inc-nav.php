@@ -2,7 +2,6 @@
 global $intellect_options;
 
 $logo = $intellect_options['intellect_opt_logo_image']['url'];
-$textFollow = $intellect_options['intellect_opt_header_text_follow'] ?? '';
 $linkFollow = $intellect_options['intellect_opt_header_follow'] ?? '';
 
 if ( empty( $logo ) ) :
@@ -10,30 +9,26 @@ if ( empty( $logo ) ) :
 endif;
 ?>
 
-<nav class="navbar navbar-inverse navbar-fixed-top">
+<nav class="navbar navbar-expand-lg navbar-inverse navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-
             <a class="navbar-brand" href="<?php echo home_url() ?>">
                 <img src="<?php echo esc_url( $logo ); ?>" alt="">
             </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
         </div>
 
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <div class="collapse navbar-collapse" id="navbar-menu">
             <?php
             wp_nav_menu(
                 array(
                     'theme_location' => 'main-menu',
                     'menu' => 'main-menu',
                     'container' => 'ul',
-                    'menu_class' => 'nav navbar-nav navbar-custom'
+                    'menu_class' => 'nav navbar-nav navbar-custom flex-grow-1'
                 )
             );
 
@@ -42,7 +37,7 @@ endif;
 
             <div class="nav navbar-nav navbar-right">
                 <p class="subcribe">
-                    <?php echo esc_html( $textFollow ); ?>
+                    <?php esc_html_e( 'Theo dõi tôi trên', 'intellect' ); ?>
                 </p>
 
                 <div class="subcribe-image">

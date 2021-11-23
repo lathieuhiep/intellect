@@ -2,6 +2,7 @@
 global $intellect_options;
 
 $showBackToTop = $intellect_options['intellect_opt_backtotop_show'] ?? true;
+$copyright = $intellect_options['intellect_opt_footer_copyright_editor'] ?? true;
 ?>
 <div id="register">
     <div class="container text-center">
@@ -15,9 +16,9 @@ $showBackToTop = $intellect_options['intellect_opt_backtotop_show'] ?? true;
 <div id="footer">
     <div class="container">
         <div class="footer-left" style="float: left">
-            <p>© Copyright 2018 <a href="https://www.facebook.com/huonguiux
-" target="_blank"><span>Sarah Nguyen</span></a>. All rights reserved</p>
+            <?php echo wp_kses_post($copyright); ?>
         </div>
+
         <div class="footer-right" style="float: right">
             <ul>
                 <li><a href="<?php echo home_url('/gioi-thieu') ?>">Giới thiệu</a></li>
